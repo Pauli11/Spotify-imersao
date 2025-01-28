@@ -1,0 +1,30 @@
+body{
+    background-color: #000;    
+}
+
+.sidebar{
+    position: fixed; /* isso diz: haja o que houver, essa div - que é container, deve ficar fixa na página*/
+    top:0; /*pra grudar emcima*/
+    left: 0; /*pra grudar `q esquerda*/
+    bottom:0;
+    padding:12px;
+    width:300px;
+}
+
+.sidebar__navigation{
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px; /* pense no sentido horário cada posição: em cima,depois direita, depois embaixo, depois esquerda  */
+}
+
+.sidebar__navigation .logo {
+    background: #121212;
+    display:flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar__navigation .logo .img{
+    width: 80px;
+}
+
