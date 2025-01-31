@@ -1,5 +1,7 @@
 body{
     background-color: #000;    
+    font-family: var(--font-dm-sans);/* aqui se declara a fonte exatamente com o nome da variável que foi criada, dentro dos () */
+    /*com a declaração acima feita no body, é possivel TIRAR O FONT-FAMILY de todas as estilizações abaixo que vai continuar funcionando  */
 }
 
 .sidebar{
@@ -96,7 +98,7 @@ body{
     display:flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap:20px;
+    gap:20px; /* ajuda a colocar espaço entre os elementos dentro desse conteudo, sem precisar ficar calculando. coloca o mesmo espaço entre os elementos*/
     background-color: #242424;
     color:#b3b3b3;
     font-weight: 600;
@@ -155,7 +157,7 @@ body{
     text-decoration: none;
 }
 
-.sidebar .cookies a:hover{
+.sidebar .cookies a:hover{    /* pseudo classe em CSS aqui: hover. no caso mostra um sublinhado quando passa o mouse */
     text-decoration: underline;
 }
 
@@ -170,4 +172,45 @@ body{
     margin:8px;
     padding:8px;
     border-radius:20px;
+}
+
+
+footer{    
+    background-image:linear-gradient(to right,#DE23AF,#7D23DE,#405CE0);/*copiei codigo das cores do site adobe colors*/
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+    
+
+
+
+}
+
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 330px;
+    color:#FFF;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer__text-title{
+    font-weight: 700;
+}
+
+.footer__text-subtitle{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+.footer__button .login{
+    width: 200px;    
+    height: 48px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;    
 }

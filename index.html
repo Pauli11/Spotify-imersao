@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Spotify Imersão</title>
 
-    <link rel="stylesheet" href="reset.css"> <!--modelo pode ser pego na internet, ele zera tudo que vem pré configurado no css, pra passar a valer o css que está na linha abaixo, que é o que eu mesma configurei.PRECISA VIR NA LINHA ANTES DA MINHA DE ESTILO, PRA SER LIDO NA ORDEM: APAGA TUDO, VALE O PRÓXIMO ESTILO-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles/reset.css"> <!--modelo pode ser pego na internet, ele zera tudo que vem pré configurado no css, pra passar a valer o css que está na linha abaixo, que é o que eu mesma configurei.PRECISA VIR NA LINHA ANTES DA MINHA DE ESTILO, PRA SER LIDO NA ORDEM: APAGA TUDO, VALE O PRÓXIMO ESTILO-->
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
 
      <!-- Links para trazer os ícones via CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
@@ -21,7 +23,7 @@
         <nav class="sidebar__navigation">
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo do Spotify">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="logo do Spotify">
                 </a>
             </div>
             <ul>
@@ -70,5 +72,37 @@
                 </div>
         </div><!--fecha o libary-->
     </div><!--fecha o sidebar-->    
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__text">
+            <span class="footer__text-title"> Testar o premium de graça</span>
+            <span class="footer__text-subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
+        </div>
+        <div class="footer__button">
+            <button class="login">Inscreva-se grátis</button>
+        </div>
+    </footer>
+    
 </body>
 </html>

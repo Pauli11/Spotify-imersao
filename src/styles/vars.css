@@ -1,0 +1,10 @@
+/*aqui é um arquivo para CSS Variables, aqui vc declara uma variavel que recebe um estilo CSS que vai abranger tudo e quando precisar trocar algo pra refatorar é so aqui que precisa mudar e muda em tudo*/
+:root{
+    /* FONT */
+    --font-dm-sans:"DM Sans", sans-serif;
+
+    /* COLORS */
+    --bg-icon:#131313;
+    --bg-arrow-color:rgba(0,0,0,7)
+}
+
